@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+body.dark nav {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.logo p {
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+
+body.light {
+  background: #ffffff;
+  color: #222;
+}
+
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.theme-toggle i {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 50rem;
+}
+
+.resume {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.resume-link {
+    margin-top: 2rem;
+}
+
+.resume-link button {
+    text-decoration: none;
+    background: blue;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #fff;
+    border: none;
+}
+
+.my-resume {
+    margin: auto;
+    margin-top: 7rem;
+    background: #e5d2e540;
+    width: 95%;
+}
+
+body.dark .my-resume {
+    background: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.my-name {
+    margin-top: 2rem;   
+}
+
+.my-work {
+    font-size: 17px;
+}
+
+.my-work p {
+    font-size: 14px;
+}
+
+.ayo p {
+    font-size: 25px;
+    font-weight: 600;
+    color: blue;
+}
+
+body.dark .phone-text p {
+    color: #fff;
+}
+
+.phone {
+    display: flex;
+    width: 100%;
+    margin-top: .7rem;
+}
+
+.phone-img img {
+    width: 10%;
+    background: transparent;
+}
+
+.phone-img .call {
+    width: 7%;
+}
+
+.phone-text p {
+    font-size: 11px;
+}
+
+.gmmail p {
+    font-size: 9px;
+}
+
+.my-work h4 {
+    font-size: 10px;
+}
+
+.my-name h1 {
+    color: blue;
+    font-size: 20px;
+}
+
+.name {
+    display: flex;
+    gap: 10%;
+    margin-left: 5rem;
+    border-bottom: 1px solid #c6d8d8de;
+    padding: 2rem;
+}
+
+.my-contact {
+    border-left: 1px solid #c6d8d8de;
+    padding: 2rem;
+}
+
+.about {
+    display: flex;
+    margin-top: 3rem;
+}
+
+
+.about-img img {
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 2.2rem;
+}
+
+.about-text p {
+    font-size: 11px;
+    width: 90%;
+    /* margin-left: 2rem; */
+    line-height: 3.0;
+    margin-top: 4rem;
+}
+
+.work-experience {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.experience {
+    margin-left: 3rem;
+    border-right: 1px solid #c6d8d8de;
+    
+}
+
+.experience h1 {
+    color: blue;
+    border-left: 2px solid blue;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 19px;
+}
+
+.experience h3 {
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.experience p {
+    font-size: 12px;
+    margin-top: 1rem;
+    line-height: 1.8;
+    width: 90%;
+}
+
+.experience ul li {
+    font-size: 12px;
+}
+
+.opt {
+    font-size: 10px;
+}
+
+.opt li {
+    margin-top: 1rem;
+    width: 60%;
+    font-size: 14px;
+}
+
+.shoe {
+    display: flex;
+    gap: 15%;
+}
+
+.projects {
+    margin-top: 4rem;
+}
+
+.projects h1 {
+    font-size: 19px;
+}
+
+.projects p {
+    width: 90%;
+    font-size: 12px;
+}
+
+.ecom h3 {
+    font-size: 15px;
+}
+
+.pers p {
+    width: 100%;
+    margin-top: 1.8rem;
+    font-size: 12px;
+}
+
+.shoe {
+    margin-top: 1rem;
+}
+
+.skills {
+    margin-right: 1.5rem;
+    margin-left: 3rem;
+}
+
+.skills h1 {
+    color: blue;
+    border-left: 2px solid blue;
+    padding: 1rem;
+    font-size: 19px;
+}
+
+.skills h2 {
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.skills h3 {
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.skil {
+    font-size: 10px;
+}
+
+.skil li {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.nat p {
+    font-size: 12px;
+}
+
+.nat i {
+    font-size: 10px;
+}
+
+.engl {
+    font-size: 14px;
+}
+
+.engl li {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.int {
+    font-size: 10px;
+}
+
+.int li {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.education h1 {
+    margin-top: 3rem;
+    font-size: 19px;
+}
+
+.language h1 {
+    margin-top: 3rem;
+    font-size: 19px;
+}
+
+.interest h1 {
+    margin-top: 3rem;
+    font-size: 19px;
+}
+
+.links {
+    display: flex;
+    gap: 5%;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px solid #c6d8d8de;
+    margin-top: 3rem;
+}
+
+.ayomi {
+    display: flex;
+    gap: 10%;
+}
+
+#twitter {
+    margin-top: 3.1rem;
+}
+
+.git-link {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.git-link a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body.dark .git-link a {
+    color: #fff;
+}
+
+.copyright {
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.copyright p {
+    font-size: 11px;
+}
+
+.options {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: .6rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    margin-top: 5rem;
+    /* gap: 16%; */
+    width: 100%;
+}
+
+body.dark .options {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #ress {
+    background: #fff;
+}
+
+body.dark #portt {
+    background: #fff;
+}
+
+
+.contact, .second-resume, .second-port, .second-contact {
+    margin-left: 1rem;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.aboutt-text a:hover {
+    color: blue;
+    transition: 1s ease;
+}
+
+.aboutt-text a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 8px;
+}
+
+body.dark .aboutt-text a {
+    color: #fff;
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        padding: 0;
+        padding: .6rem;
+    }
+    
+    .logo p {
+        margin-left: 0;
+    }
+    
+    .theme-toggle i {
+        margin: 0;
+    }
+    
+    .resume h1 {
+        font-size: 25px;
+    }
+    
+    .name {
+        display: grid;
+        margin: 0;
+    }
+    
+    .my-name {
+        margin: 0;
+    }
+    
+    .ayo p {
+        font-size: 17px;
+    }
+
+    .my-work p {
+        font-size: 11px;
+    }
+    
+    .my-contact {
+        margin: 0;
+        padding: 0;
+        padding: 0.7rem;
+    }
+    
+    .phone {
+        display: grid;
+    }
+    
+    .phone-text p {
+        font-size: 11px;
+        color: #000;
+    }
+    
+    .about {
+        display: grid;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    
+    .about-img {
+        text-align: center;
+    }
+    
+    .about-img img {
+        width: 40%;
+    }
+
+    .aboutt-text {
+        display: none;
+    }
+    
+    .about-text p {
+        margin-top: 1rem;
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: center;
+    }
+    
+    .work-experience {
+        display: grid;
+    }
+    
+    .experience {
+        margin: 0;
+        margin-left: 1rem;
+    }
+    
+    .experience h1 {
+        font-size: 19px;
+    }
+    
+    .projects h1 {
+        font-size: 19px;
+    }
+    
+    .experience p {
+        font-size: 12px;
+    }
+    
+    .opt li {
+        font-size: 12px;
+        margin-left: 13px;
+    }
+    
+    .ecom h3 {
+        font-size: 14px;
+    }
+    
+    #ecom h3 {
+        font-size: 11px;
+    }
+    
+    .skills {
+        margin: 0;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .skills h1 {
+        font-size: 19px;
+    }
+    
+    .skills h2 {
+        font-size: 15px;
+    }
+    
+    .skil li {
+        font-size: 12px;
+        margin-left: 13px;
+    }
+    
+    .education h1 {
+        font-size: 19px;
+    }
+    
+    .language h1 {
+        font-size: 19px;
+    }
+
+    .language ul li {
+        margin-left: 13px;
+    }
+    
+    .interest h1 {
+        font-size: 19px;
+    }
+
+    .interest ul li {
+        margin-left: 13px;
+    }
+    
+    
+    .git-link {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .git-link a {
+        font-size: 9px;
+        color: blue;
+    }
+    
+    #twitter {
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    
+    
+    .ayomi {
+        display: flex;
+        gap: 5%;
+    }
+    
+    .options {
+        gap: 0%;
+        margin: 0;
+        /* width: 80%; */
+    }
+    
+    .aboutt-text {
+        display: none;
+    }
+    
+    .aboutt-img img {
+        width: 50%;
+    }
+    
+    #port .aboutt-img img {
+        width: 40%;
+    }
+}

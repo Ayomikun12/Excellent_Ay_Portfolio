@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+body.dark nav {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.logo p {
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+
+body.light {
+  background: #ffffff;
+  color: #222;
+}
+
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.theme-toggle i {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 50rem;
+}
+
+.contactt {
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.contactt h1 {
+    font-size: 20px;
+}
+
+.contactt p {
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.contactt p span {
+    color: blue;
+}
+
+body.dark .contactt p span {
+    color: #fff;
+    font-weight: 800;
+}
+
+.contact-details {
+    margin-left: 7rem;
+}
+
+.contact-details h1 {
+    border-left: 3px solid blue;
+    padding: .7rem;
+    font-size: 20px;
+}
+
+.contact-details p {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.my-contact {
+    display: flex;
+    gap: 5%;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+.phone {
+    display: block;
+    gap: 2%;
+    border-left: 1px solid blue;
+    padding: .8rem;
+}
+
+.phone-text p, .location-text p, .email-text p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.location {
+    display: block;
+    gap: 2%;
+    border-left: 1px solid blue;
+    padding: .8rem;
+}
+
+.email {
+    display: block;
+    gap: 2%;
+    border-left: 1px solid blue;
+    padding: .8rem;
+}
+
+.get {
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
+.get h1 {
+    border-left: 3px solid blue;
+    padding: .7rem;
+    margin-top: 4rem;
+    font-size: 20px;
+}
+
+.get p {
+    margin-top: 1rem;
+    font-size: 11px;
+}
+
+.touch {
+    margin-left: 7rem;
+    margin-top: 3rem;
+    box-shadow: black;
+    background-color: rgb(241, 240, 240);
+    width: 80%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+body.dark .touch {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 0 10px white;
+}
+
+.getin h1 {
+    font-size: 20px;
+}
+
+.getin p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.locate h1 {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.locate p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.emaill h1 {
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
+
+.emaill p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.phones h1 {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.phones p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.line {
+    width: 100%;
+    margin-top: 1rem;
+    opacity: .6;
+}
+
+.gett {
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.gett a {
+    text-decoration: none;
+    background: blue;
+    padding: 1rem;
+    border-radius: 26px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.gett a i {
+    transform: rotate(50deg);
+    margin-left: 7px;
+}
+
+.copyright {
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.copyright p {
+    font-size: 11px;
+}
+
+.options {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: .6rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    margin-top: 5rem;
+    gap: 16%;
+    width: 100%;
+}
+
+body.dark .options {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #ress {
+    background: #fff;
+}
+
+body.dark #portt {
+    background: #fff;
+}
+
+.contact, .second-resume, .second-port, .second-contact {
+    margin-left: 1rem;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text a:hover {
+    color: blue;
+    transition: 1s ease;
+}
+
+
+
+.about-text a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 7px;
+}
+
+
+
+@media(max-width: 800px) {
+    nav {
+        padding: 0;
+        padding: .6rem;
+    }
+
+    .logo p {
+        margin-left: 0;
+    }
+    
+    .theme-toggle i {
+        margin: 0;
+    }
+    
+    .contactt h1 {
+        font-size: 19px;
+    }
+    
+    .contactt p {
+        width: 90%;
+        line-height: 1.9;
+    }
+    
+    .contact-details {
+        margin: 0;
+        /* margin-left: 1rem; */
+        padding: 1rem;
+    }
+    
+    .contact-details h1 {
+        font-size: 19px;
+    }
+    
+    .my-contact {
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        display: grid;
+    }
+    
+    .get {
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .get h1 {
+        font-size: 19px;
+    }
+
+    .get p {
+        line-height: 1.7;
+    }
+    
+    .touch {
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .getin p {
+        font-size: 12px;
+    }
+
+    .locate h1, .emaill h1, .phones h1 {
+        font-size: 15px;
+    }
+
+    .locate p, .emaill p, .phones p {
+        font-size: 12px;
+    }
+    
+    .gett {
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .gett a {
+        padding: 0;
+        padding: .7rem;
+    }
+    
+    .options {
+        gap: 0%;
+        gap: 10%;
+    }
+    
+    .about-text {
+        display: none;
+    }
+    
+    .about-img img {
+        width: 50%;
+    }
+    
+    #port .about-img img {
+        width: 40%;
+    }
+}

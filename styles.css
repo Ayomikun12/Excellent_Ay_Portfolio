@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+
+body.light {
+  background: #ffffff;
+  color: #222;
+}
+
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.theme-toggle i {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 50rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    z-index: 1;
+}
+
+body.dark nav {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+.logo p {
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+
+.webdev {
+    margin-left: 7rem;
+    margin-top: 7rem;
+    font-size: 12px;
+}
+
+.webdev h1, p {
+   margin-top: .7rem;
+}
+
+.webdev span a {
+    text-decoration: none;
+}
+
+body.dark .webdev span a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.my-port {
+    display: flex;
+    margin-left: 7rem;
+    gap: 2%;
+    margin-top: 2rem;
+}
+
+.portfolio {
+    display: flex;
+    
+}
+
+.portfolio-text a {
+    color: #fff;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: .7rem;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.portfolio-text button {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.resume {
+    display: flex;
+    
+}
+
+body.dark .resume-text a {
+    box-shadow: 0 0 10px white;
+}
+
+.resume-text a {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: .7rem;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+
+.resume-text button {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+
+.portfolio-img img {
+    width: 10%;
+}
+
+body.dark .year {
+    color: #fff;
+}
+
+body.dark .pro {
+    color: #fff;
+}
+
+.my-image{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.my-image img {
+    width: 20%;
+    background: #fff;
+    padding: .7rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.my-image::before {
+    background: blue;
+    content: '';
+    z-index: -1;
+    height: 40vh;
+    width: 30%;
+    display: block;
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: 10rem;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.years {
+    margin-top: 3rem;
+}
+
+.years h1 {
+    font-size: 40px;
+    color: blue;
+    text-align: center;
+}
+
+.year {
+    font-weight: 200;
+    font-size: 20px;
+    color: #000;
+}
+
+
+.about {
+    margin-top: 5rem;
+    margin-left: 7rem;
+}
+
+.about span a {
+    text-decoration: underline;
+}
+
+body.dark .about span a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.about h1 {
+    border-left: 3px solid blue;
+    padding: 1rem;
+    font-size: 19px;
+}
+
+.about p {
+    font-size: 11px;
+    line-height: 2.1;
+    margin-top: 1rem;
+}
+
+.html-img img {
+    width: 10%;
+}
+
+#html {
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 1rem;
+    width: 30%;
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
+.html-text {
+    margin-top: 1rem;
+}
+
+.html-text h1 {
+    font-size: 18px;
+}
+
+.html-text p {
+    width: 75%;
+    margin-top: 1rem;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.service {
+    display: flex;
+    gap: 2.5%;
+}
+
+.hidden {
+  opacity: 0;
+/*  transform: translateY(20px);*/  
+  transform: scale(0.9);
+  transition: all 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  /*transform: translateY(0);*/  
+  transform: scale(1);
+}
+
+body.dark #html {
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #css {
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #bootstrap {
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #node {
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#css {
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 1rem;
+    width: 30%;
+    margin-top: 3rem;
+}
+
+#node {
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 1rem;
+    width: 30%;
+    margin-top: 3rem;
+    margin-left: 7rem;
+}
+
+.css-text h1 {
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.css-text p {
+    width: 90%;
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+#bootstrap {
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 1rem;
+    width: 30%;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+.boot-text h1 {
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.boot-text p {
+    width: 90%;
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+.get {
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.get a {
+    text-decoration: none;
+    background: blue;
+    padding: 1rem;
+    border-radius: 26px;
+    font-size: 11px;
+    color: #fff;
+}
+
+body.dark .get a {
+    background-color: black;
+    box-shadow: 0 0 10px white;
+}
+
+.get a i {
+    transform: rotate(50deg);
+    margin-left: 10px;
+}
+
+.get button {
+  background-color: transparent;
+  border: none;
+  font-size: 44px;
+  color: #fff;
+}
+.copyright {
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.copyright p {
+    font-size: 11px;
+}
+
+.options {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: .6rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    margin-top: 5rem;
+    gap: 16%;
+    width: 100%;
+}
+
+body.dark .options {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark #ress {
+    background: #fff;
+}
+
+body.dark #portt {
+    background: #fff;
+}
+
+.contact, .second-resume, .second-port, .second-contact {
+    margin-left: 1rem;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-text a:hover {
+    color: blue;
+    transition: 1s ease;
+}
+
+.about-text a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 8px;
+}
+
+body.dark .about-text a {
+    color: #fff;
+}
+
+.contact .active {
+  background-color: #3498db;
+  color: white;
+}
+
+
+@keyframes animateContent {
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        padding: 0;
+        padding: .6rem;
+    }
+    
+    .logo p {
+        margin-left: 0;
+    }
+    
+    .theme-toggle i {
+        margin: 0;
+    }
+    
+    .webdev {
+        margin: 0;
+        margin-top: 7rem; 
+        margin-left: 1rem;
+    }
+    
+    .resume-text {
+        margin-top: 2rem;
+    }
+    
+    .next-arrow {
+        margin-top: 1rem;
+    }
+    
+    .my-port {
+        display: grid;
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .my-image img {
+        width: 50%;
+    }
+    
+    .my-image::before {
+        margin: 0;
+        margin-top: 7rem;
+        margin-left: 3rem;
+        width: 55%;
+    }
+    
+    .years {
+        margin: 0;
+        margin-top: 5rem;
+    }
+    
+    .years h1 {
+        font-size: 20px;
+    }
+    
+    .about {
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .service {
+        display: grid;
+        margin-top: 1rem;
+    }
+    
+    #html {
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    .html-text h1, .css-text h1, .boot-text h1 {
+        font-size: 16px;
+    }
+
+    .html-text p, .css-text p, .boot-text p {
+        font-size: 12px;
+    }
+    
+    #css {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #node {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    
+    #bootstrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .get {
+        margin: 0;
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+    
+    .get a {
+        padding: 0;
+        padding: .6rem;
+    }
+    
+    
+    .options {
+        gap: 0%;
+        gap: 10%;
+    }
+    
+    .about-text {
+        display: none;
+    }
+    
+    .about-img img {
+        width: 50%;
+    }
+    
+    #port .about-img img {
+        width: 40%;
+    }
+}
