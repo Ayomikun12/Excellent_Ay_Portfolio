@@ -477,10 +477,10 @@ body.dark .about-text a {
     
     .my-image::before {
         margin: 0;
-        margin-top: 7rem;
+        margin-top: 6rem;
         margin-left: 3rem;
         width: 55%;
-        height: 35vh;
+        height: 30vh;
     }
     
     .years {
